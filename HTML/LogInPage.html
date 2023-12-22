@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+            content="width=device-width, initial-scale=1.0">
+        <!-- <tittle>Unknown.</tittle> -->
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <script src="../JS/logInPage.js"></script>
+    </head>
+    <body>
+        <header>
+            <!-- Add logo and navigation bar -->
+            <img src="../IMAGES/logo.png" alt="Logo">
+            <nav class="headerNav">
+                <ul>
+                    <li><a class="homeButton" href="./HomePage.html">HOME</a></li>
+                    <li><a class="gameButton" href="./GamePage.html">GAME</a></li>
+                    <li><a class="scoreButton" href="./ScorePage.html">SCORE</a></li>
+                    <li><a class="rankButton" href="./RankPage.html">RANK</a></li>
+                    <li><a class="loginButton" href="./LogInPage.html">LOGIN</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Add content here -->
+            <div class="logInBox">
+                <p class="logInTop">Log-In</p>
+                <input type="text" id="logInUsername" placeholder="Username">
+                <input type="password" id="logInPassword" placeholder="Password">
+                <div id="feedbackLogIn"></div>
+                <button id="logInButton" onclick="logIn()">Log In</button>
+                <button id="logOutButton" onclick="logOut()">Log Out</button>
+            </div>
+            <hr>
+            <div class="registerBox">
+                <p class="registerTop">Register</p>
+                <input type="text" id="registerUsername" placeholder="Username">
+                <input type="text" id="registerEmail" placeholder="Email">
+                <input type="text" id="registerName" placeholder="Name">
+                <input type="password" id="registerPassword" placeholder="Password"> 
+                <input type="text" id="registerSurname" placeholder="Surname">
+                <input type="password" id="registerConfirmPassword" placeholder="Confirm Password">
+                <div id="feedbackRegister"></div>
+                <button id="registerButton" onclick="register()">Register</button>
+            </div>
+        </main>
+        <!-- Add footer -->
+        <footer>
+            <ul>
+                <li><p class="authorRights">&copy2023Unknown. By Alam Rincon</p></li>
+                <li><p class="contactDetails">Contact us <a class="mailButton" href="mailto:AlamRincon@Unknown.co.uk">Here</a></p></li>
+            </ul>
+        </footer>
+    </body>
+</html>

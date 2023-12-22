@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+            content="width=device-width, initial-scale=1.0">
+        <!-- <tittle>Unknown.</tittle> -->
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <script src="../JS/gamePage.js"></script>
+    </head>
+    <body>
+        <header>
+            <!-- Added logo and navigation bar -->
+            <img src="../IMAGES/logo.png" alt="Logo">
+            <nav class="headerNav">
+                <ul>
+                    <li><a class="homeButton" href="./HomePage.html">HOME</a></li>
+                    <li><a class="gameButton" href="./GamePage.html">GAME</a></li>
+                    <li><a class="scoreButton" href="./ScorePage.html">SCORE</a></li>
+                    <li><a class="rankButton" href="./RankPage.html">RANK</a></li>
+                    <li><a class="loginButton" href="./LogInPage.html">LOGIN</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Add content here -->
+            <p id="gameVersion">Game Version - 1.0</p>
+            <p id="forTheScore">
+                <span>Score:</span><span id="currentScore">0</span>
+            </p>
+            <canvas id="gameCanvas">
+            </canvas>
+            <p class="controls">Controls</p>
+            <p class="controlsInstructions">Use the keyboard to control the ship | A=Left D=Right | Space to use the rockets.</p>
+        </main>
+        <!-- Add footer -->
+        <footer>
+            <ul>
+                <li><p class="authorRights">&copy2023Unknown. By Alam Rincon</p></li>
+                <li><p class="contactDetails">Contact us <a class="mailButton" href="mailto:AlamRincon@Unknown.co.uk">Here</a></p></li>
+            </ul>
+        </footer>
+    </body>
+</html>
